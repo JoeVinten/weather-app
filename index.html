@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+    <div class="wrapper">
+      <header class="header">
+        <form class="form-cont">
+          <div class="form-group">
+            <input class="txt-input city-input" placeholder="Search city" type="text" />
+            <span class="err"></span>
+
+          </div>
+        </form>
+        <div class="units">
+          <div class="metric active">Metric</div>
+          <div class="imperial">Imperial</div>
+        </div>
+      </header>
+      <main class="container">
+        <div class="loader"></div>
+          <div class="weather-output">
+            <div class="info">
+              <h2 class="city"></h2>
+              <div class="description"></div>
+              <div class="description__img">
+              </div>
+            </div>
+            <div class="temp-cont">
+              <div class="temp">
+                <div class="temp__title">Temperature</div>
+                <div class="temp__value"></div>
+              </div>
+              <div class="feels-like">
+                <div class="temp__title">Feels Like</div>
+                <div class="feels-like__value"></div>
+              </div>
+            </div>
+            
+
+          </div>
+        </div>
+      </main>
+    </div>
+    
+		<script src="app.js"></script>
+	</body>
+</html>
